@@ -5,14 +5,14 @@ Summary:	Crypt::HCE_SHA Perl module - hash chaining encryption using SHA
 Summary(pl):	Modu³ Perla Crypt::HCE_SHA - ³añcuchowe kodowanie z u¿yciem SHA
 Name:		perl-Crypt-HCE_SHA
 Version:	0.60
-Release:	1
+Release:	2
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Digest-SHA1
 BuildRequires:	perl-MIME-Base64 >= 2
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-MIME-Base64 >= 2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -31,7 +31,8 @@ radiusie (RFC 2138) oraz opisana w Applied Cryptography.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 %{__make} test
 
@@ -50,7 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitelib}/Crypt/HCE_SHA.pm
-%{perl_sitelib}/auto/Crypt/HCE_SHA
+%{perl_vendorlib}/Crypt/HCE_SHA.pm
+%{perl_vendorlib}/auto/Crypt/HCE_SHA
 %{_mandir}/man3/*
 %{_examplesdir}/%{name}-%{version}
