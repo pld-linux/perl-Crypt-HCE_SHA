@@ -9,6 +9,7 @@ Release:	2
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	4e92d64bfa6d2a75ae1b641bd92331ca
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	perl-Digest-SHA1
 BuildRequires:	perl-MIME-Base64 >= 2
