@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Crypt
-%define	pnam	HCE_SHA
+%define		pdir	Crypt
+%define		pnam	HCE_SHA
 Summary:	Crypt::HCE_SHA Perl module - hash chaining encryption using SHA
 Summary(pl):	Modu³ Perla Crypt::HCE_SHA - ³añcuchowe kodowanie z u¿yciem SHA
 Name:		perl-Crypt-HCE_SHA
