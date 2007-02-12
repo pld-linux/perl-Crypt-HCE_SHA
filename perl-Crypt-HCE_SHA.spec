@@ -2,7 +2,7 @@
 %define		pdir	Crypt
 %define		pnam	HCE_SHA
 Summary:	Crypt::HCE_SHA Perl module - hash chaining encryption using SHA
-Summary(pl):	Modu≥ Perla Crypt::HCE_SHA - ≥aÒcuchowe kodowanie z uøyciem SHA
+Summary(pl.UTF-8):   Modu≈Ç Perla Crypt::HCE_SHA - ≈Ça≈Ñcuchowe kodowanie z u≈ºyciem SHA
 Name:		perl-Crypt-HCE_SHA
 Version:	0.70
 Release:	1
@@ -23,9 +23,9 @@ This module implements a chaining block cipher using a one way hash.
 This method of encryption is the same that is used by radius (RFC2138)
 and is also described in Applied Cryptography.
 
-%description -l pl
-Ten modu≥ jest implementacj± ≥aÒcuchowego szyfru blokowego przy uøyciu
-jednokierunkowego mieszania. Jest to ta sama metoda, co uøywana w
+%description -l pl.UTF-8
+Ten modu≈Ç jest implementacjƒÖ ≈Ça≈Ñcuchowego szyfru blokowego przy u≈ºyciu
+jednokierunkowego mieszania. Jest to ta sama metoda, co u≈ºywana w
 radiusie (RFC 2138) oraz opisana w Applied Cryptography.
 
 %prep
