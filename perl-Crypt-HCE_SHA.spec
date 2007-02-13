@@ -2,7 +2,7 @@
 %define		pdir	Crypt
 %define		pnam	HCE_SHA
 Summary:	Crypt::HCE_SHA Perl module - hash chaining encryption using SHA
-Summary(pl.UTF-8):   Moduł Perla Crypt::HCE_SHA - łańcuchowe kodowanie z użyciem SHA
+Summary(pl.UTF-8):	Moduł Perla Crypt::HCE_SHA - łańcuchowe kodowanie z użyciem SHA
 Name:		perl-Crypt-HCE_SHA
 Version:	0.70
 Release:	1
