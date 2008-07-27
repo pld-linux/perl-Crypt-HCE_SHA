@@ -5,7 +5,7 @@ Summary:	Crypt::HCE_SHA Perl module - hash chaining encryption using SHA
 Summary(pl.UTF-8):	Moduł Perla Crypt::HCE_SHA - łańcuchowe kodowanie z użyciem SHA
 Name:		perl-Crypt-HCE_SHA
 Version:	0.70
-Release:	1
+Release:	2
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
