@@ -1,6 +1,6 @@
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Crypt
 %define		pnam	HCE_SHA
+%include	/usr/lib/rpm/macros.perl
 Summary:	Crypt::HCE_SHA Perl module - hash chaining encryption using SHA
 Summary(pl.UTF-8):	Moduł Perla Crypt::HCE_SHA - łańcuchowe kodowanie z użyciem SHA
 Name:		perl-Crypt-HCE_SHA
@@ -10,9 +10,10 @@ License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	c18dc95cd5ce92828c6e4efdf07fa7a9
-BuildRequires:	perl-devel >= 1:5.8.0
+URL:		http://search.cpan.org/dist/Crypt-HCE_SHA/
 BuildRequires:	perl-Digest-SHA1
 BuildRequires:	perl-MIME-Base64 >= 2
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-MIME-Base64 >= 2
 BuildArch:	noarch
@@ -44,7 +45,7 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -p examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
